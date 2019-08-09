@@ -1,6 +1,7 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
+import { PropTypes as PT } from 'prop-types';
+
+import { useSelector, useDispatch } from 'react-redux';
 
 import { fetchAllRepositories } from '../../store/actions/repositories';
 import { getRepositoryCount } from '../../store/reducers';
@@ -68,5 +69,9 @@ const Pagination = ({ newResultsLoading }) => {
     </PaginationContainer>
   );
 };
+
+Pagination.propTypes = {
+  newResultsLoading: PT.bool,
+}
 
 export default Pagination;

@@ -45,7 +45,13 @@ const Repository = ({ item, itemFlagged = true, toggleFlagged }) => {
 };
 
 Repository.propTypes = {
-  repositories: PT.array,
+  item: PT.shape({
+    full_name: PT.string,
+    description: PT.string,
+    owner: PT.shape({
+      avatar_url: PT.string,
+    })
+  }),
   fetchAllRepositories: PT.func,
 }
 
