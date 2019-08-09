@@ -1,0 +1,10 @@
+# Log file
+*.log
+
+node_modules/
+coverage/
+.env
+dist/
+.idea/
+.vscode/
+.DS_Store
