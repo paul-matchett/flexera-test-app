@@ -28,7 +28,7 @@ const Pagination = ({ newResultsLoading }) => {
 
   React.useEffect(() => {
     localStorage.setItem("page-number", JSON.stringify(pageNumber));
-  });
+  }, [pageNumber]);
 
   const onUpdatePagination = (number) => {
     if (!newResultsLoading) {

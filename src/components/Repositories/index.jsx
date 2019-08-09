@@ -29,7 +29,7 @@ const Repositories = () => {
 
   React.useEffect(() => {
     localStorage.setItem("flagged-list", JSON.stringify(flaggedList));
-  });
+  }, [flaggedList]);
 
   const toggleFlagged = (name, itemFlagged) => {
     if (itemFlagged) {
