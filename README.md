@@ -1,7 +1,7 @@
 ### Installation Instructions
 
 1. Download & Install [Node V8.11.1](https://nodejs.org/en/download/releases/) for NPM.
-2. Clone repo with `git clone https://github.com/UnosquareBelfast/admin-web.git`
+2. Clone repo with `git clone https://github.com/paul-matchett/flexera-test-app.git`
 3. Run `npm install` to get the dependencies for the project.
 6. Run `npm start` to start the web-server.
 
